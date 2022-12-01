@@ -28,7 +28,7 @@
                     </clipPath>
                   </defs>
                 </svg>
-              </a>60
+              </a>
             </li>
             <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link" href="index.html">
@@ -54,91 +54,90 @@
     </div>
   </header>
 
-  <main class="main-container">
-    <section class="preview">
-      <h1 class="preview__title">
-        Функциональное <br>питание для котов
-      </h1>
-      <p class="preview__paragraph">
-        Занялся собой? Займись котом!
-      </p>
-      <img src="img/product-preview.png" alt="CAT ENERGY КУРИЦА" width="280" height="270">
-      <a href="form.html" class="preview__link button button--program-selection">
-        подобрать программу
-      </a>
-    </section>
-    <section class="proposal">
-      <div class="proposal__container">
-        <h2 class="proposal__title proposal__title--skinny">
-          похудение
-        </h2>
-        <p class="proposal__description">
-          Ваш кот весит больше собаки и <br>почти утратил способность лазить <br>по деревьям? Пора на диету! Cat
-          <br>Energy Slim поможет вашему <br>питомцу сбросить лишний вес.
+  <main class="form-container">
+    <section class="program-selection">
+      <div class="program-selection__wrapper">
+        <h1 class="program-selection__title">
+          Подбор программы
+        </h1>
+        <p class="program-selection__description">
+          Заполните анкету, и мы подберем <br>программу питания для вашего кота
         </p>
-        <a href="catalog.html" class="proposal__link">
-          каталог slim
-        </a>
-      </div>
-      <div class="proposal__container">
-        <h2 class="proposal__title proposal__title--muscular">
-          Набор массы
-        </h2>
-        <p class="proposal__description">
-          Заработать авторитет среди <br>дворовых котов и даже собак? <br>Серия Cat Energy Pro поможет <br>вашему коту
-          нарастить <br>необходимые мышцы!
-          <a href="catalog.html" class="proposal__link">
-            каталог pro
-          </a>
-      </div>
-    </section>
-    <section class="description">
-      <div class="description__wrapper">
-        <h2 class="description__title">
-          Как это работает
-        </h2>
-        <p class="description__paragraph description__paragraph--useful">
-          Функциональное питание <br>содержит только полезные <br>питательные вещества.
+        <form class="program-selection__form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="program-selection__cat-data-form cat-data-form">
+            <label class="cat-data-form__label">
+              ИМЯ:*
+              <input class="cat-data-form__input" name="name" type="text" placeholder="Барсик" required>
+            </label>
+            <label class="cat-data-form__label">
+              Вес (кг):*
+              <input class="cat-data-form__input" name="mass" type="text" placeholder="7" required>
+            </label>
+            <label class="cat-data-form__label">
+              Возраст (лет):
+              <input class="cat-data-form__input" name="age" type="text" placeholder="7">
+            </label>
+          </fieldset>
+          <fieldset class="program-selection__result-form result-form">
+            <label class="result-form__label">
+              <input class="result-form__radio" type="radio" name="program" value="skinny" checked>
+              похудение
+            </label>
+            <label class="result-form__label">
+              <input class="result-form__radio" type="radio" name="program" value="muscular">
+              Набор массы
+            </label>
+            <label class="result-form__label">
+              <input class="result-form__radio" type="radio" name="program" value="need-advice">
+              Не знаю (Нужен ваш совет)
+            </label>
+          </fieldset>
+          <fieldset class="program-selection__data-contact data-contact">
+            <legend class="data-contact__title">
+              Контактные данные <br>(владельца кота)
+            </legend>
+            <label class="data-contact__label">
+              E-mail:*
+              <input class="data-contact__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
+            </label>
+            <label class="data-contact__label">
+              Телефон:*
+              <input class="data-contact__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+            </label>
+          </fieldset>
+          <fieldset class="program-selection__comment comment">
+            <legend class="comment__title">
+              Комментарий
+            </legend>
+            <textarea class="comment__input" name="coment" rows="8" cols="33"
+              placeholder="Расскажите обо всех повАдках кота"></textarea>
+          </fieldset>
+          <fieldset class="program-selection__additionally additionally">
+            <legend class="additionally__title">
+              Дополнительно
+            </legend>
+            <label class="additionally__label">
+              <input class="additionally__input" type="checkbox" name="sweetener">
+              сахарозаменитель
+            </label>
+            <label class="additionally__label">
+              <input class="additionally__input" type="checkbox" name="drinking-water">
+              питьевая вода
+            </label>
+            <label class="additionally__label">
+              <input class="additionally__input" type="checkbox" name="milk">
+              молоко
+            </label>
+            <label class="additionally__label">
+              <input class="additionally__input" type="checkbox" name="vitamins">
+              витамины
+            </label>
+          </fieldset>
+          <input class="program-selection__submit button button--submit" type="submit" value="отправить заявку">
+        </form>
+        <p class="program-selection__signature">
+          * — Обязательные поля
         </p>
-        <p class="description__paragraph description__paragraph--powder">
-          Выпускается в виде порошка, <br>который нужно лишь залить <br>кипятком и готово.
-        </p>
-        <p class="description__paragraph description__paragraph--dosage">
-          Замените один-два приема <br>обычной еды на наше <br>функциональное питание.
-        </p>
-        <p class="description__paragraph description__paragraph--month">
-          Уже через месяц <br>наслаждайтесь изменениями <br>к лучшему вашего питомца!
-        </p>
-      </div>
-    </section>
-    <section class="example">
-      <div class="example__wrapper">
-        <h2 class="example__title">
-          Живой пример
-        </h2>
-        <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто <br>заменив свой обычный корм на Cat Energy <br>Slim. Отличный
-          результат без изнуряющих <br>тренировок! При этом он не менял своих <br>привычек и по-прежнему спит по 16
-          часов <br>в день.
-        </p>
-        <dl class="example__stats stats">
-          <dt class="stats__meaning">
-            5 КГ
-          </dt>
-          <dd class="stats__description">
-            снижение веса
-          </dd>
-          <dt class="stats__meaning">
-            60 ДНЕЙ
-          </dt>
-          <dd class="stats__description">
-            затрачено времени
-          </dd>
-        </dl>
-        <p class="example__cost">
-          Затраты на питание: 15 000 РУБ.
-        </p>
-        <img src="img/example-cat.png" width="280" height="256" alt="Сравнение до и после похудения кота.">
       </div>
     </section>
   </main>
@@ -148,7 +147,7 @@
       <p class="main-footer__invite address-wrapper__invite">
         приглашаем <br>к сотрудничеству <br>дилеров!
       </p>
-      <address class="main-footer__location address-wrapper__address">
+      <address class="main-footer__address address-wrapper__address">
         ул. Большая <br>Конюшенная, д. 19/8 <br>Санкт-Петербург
       </address>
       <img class="main-footer__maps address-wrapper__maps" width="320" height="362" src="img/maps.jpg" alt="Карта.">
