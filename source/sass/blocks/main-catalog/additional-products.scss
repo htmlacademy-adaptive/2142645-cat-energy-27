@@ -1,0 +1,25 @@
+.additional-products__wrapper {
+  padding: 0 20px 35px 20px;
+}
+
+.additional-products__title {
+  margin: 0;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $main-color;
+}
+
+.additional-products__list {
+  list-style-type: none;
+}
+
+.additional-products__item {
+  border-bottom: 1px solid #cdcdcd;
+
+  &:first-of-type {
+    border-top: 1px solid #cdcdcd;
+  }
+}

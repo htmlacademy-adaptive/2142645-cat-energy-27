@@ -1,0 +1,17 @@
+.description__wrapper {
+  padding: 0 20px 49px 20px;
+}
+
+.description__title {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $main-color;
+  margin: 0;
+}
+
+.description__paragraph {
+  @include main-paragraph;
+}

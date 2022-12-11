@@ -1,0 +1,26 @@
+.program-selection__wrapper {
+  padding: 27px 20px 32px 20px;
+}
+
+.program-selection__title {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $main-color;
+  margin: 0;
+}
+
+.program-selection__description {
+  @include main-paragraph;
+  text-transform: uppercase;
+}
+
+.program-selection__cat-data-form {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.program-selection__result-form {
+  border-bottom: 1px solid #ebebeb;
+}

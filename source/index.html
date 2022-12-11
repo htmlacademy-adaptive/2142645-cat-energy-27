@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
 </head>
 
 <body class="page__body">
+
   <header class="main-header">
     <div class="main-header__wrapper">
       <nav class="main-header__main-nav main-nav">
@@ -28,7 +31,7 @@
                     </clipPath>
                   </defs>
                 </svg>
-              </a>60
+              </a>
             </li>
             <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link" href="index.html">
@@ -55,41 +58,47 @@
   </header>
 
   <main class="main-container">
-    <section class="preview">
-      <h1 class="preview__title">
-        Функциональное <br>питание для котов
-      </h1>
-      <p class="preview__paragraph">
-        Занялся собой? Займись котом!
-      </p>
-      <img src="img/product-preview.png" alt="CAT ENERGY КУРИЦА" width="280" height="270">
+    <section class="main-container__preview preview">
+      <div class="preview__cat-container">
+        <div class="previev__background-container">
+          <h1 class="preview__title">
+            Функциональное <br>питание для котов
+          </h1>
+          <p class="preview__paragraph">
+            Занялся собой? Займись котом!
+          </p>
+        </div>
+      </div>
+      <img src="img/index/product-preview.png" alt="CAT ENERGY КУРИЦА" width="280" height="270">
       <a href="form.html" class="preview__link button button--program-selection">
         подобрать программу
       </a>
     </section>
     <section class="proposal">
-      <div class="proposal__container">
-        <h2 class="proposal__title proposal__title--skinny">
-          похудение
-        </h2>
-        <p class="proposal__description">
-          Ваш кот весит больше собаки и <br>почти утратил способность лазить <br>по деревьям? Пора на диету! Cat
-          <br>Energy Slim поможет вашему <br>питомцу сбросить лишний вес.
-        </p>
-        <a href="catalog.html" class="proposal__link">
-          каталог slim
-        </a>
-      </div>
-      <div class="proposal__container">
-        <h2 class="proposal__title proposal__title--muscular">
-          Набор массы
-        </h2>
-        <p class="proposal__description">
-          Заработать авторитет среди <br>дворовых котов и даже собак? <br>Серия Cat Energy Pro поможет <br>вашему коту
-          нарастить <br>необходимые мышцы!
+      <div class="proposal__wrapper">
+        <div class="proposal__container">
+          <h2 class="proposal__title proposal__title--skinny">
+            похудение
+          </h2>
+          <p class="proposal__description">
+            Ваш кот весит больше собаки и <br>почти утратил способность лазить <br>по деревьям? Пора на диету! Cat
+            <br>Energy Slim поможет вашему <br>питомцу сбросить лишний вес.
+          </p>
           <a href="catalog.html" class="proposal__link">
-            каталог pro
+            каталог slim
           </a>
+        </div>
+        <div class="proposal__container">
+          <h2 class="proposal__title proposal__title--muscular">
+            Набор массы
+          </h2>
+          <p class="proposal__description">
+            Заработать авторитет среди <br>дворовых котов и даже собак? <br>Серия Cat Energy Pro поможет <br>вашему коту
+            нарастить <br>необходимые мышцы!
+            <a href="catalog.html" class="proposal__link">
+              каталог pro
+            </a>
+        </div>
       </div>
     </section>
     <section class="description">
@@ -138,24 +147,24 @@
         <p class="example__cost">
           Затраты на питание: 15 000 РУБ.
         </p>
-        <img src="img/example-cat.png" width="280" height="256" alt="Сравнение до и после похудения кота.">
+        <img src="img/index/example-cat.png" width="280" height="256" alt="Сравнение до и после похудения кота.">
       </div>
     </section>
   </main>
 
   <footer class="main-footer">
     <div class="main-footer__wrapper address-wrapper">
-      <p class="main-footer__invite address-wrapper__invite">
+      <p class="address-wrapper__invite">
         приглашаем <br>к сотрудничеству <br>дилеров!
       </p>
-      <address class="main-footer__location address-wrapper__address">
+      <address class="address-wrapper__address">
         ул. Большая <br>Конюшенная, д. 19/8 <br>Санкт-Петербург
       </address>
-      <img class="main-footer__maps address-wrapper__maps" width="320" height="362" src="img/maps.jpg" alt="Карта.">
     </div>
-    <div class="main-footer__wrapper ">
-      <div class="main-footer__logo logo-wrapper">
-        <a class="logo-wrapper__link logo-text" href="index.html" aria-label="CAT ENERGY">
+    <img class="main-footer__maps" width="320" height="362" src="img/maps.jpg" alt="Карта.">
+    <div class="main-footer__links-container">
+      <div class="main-footer__logo">
+        <a class="main-footer__logo-text logo-text" href="index.html" aria-label="CAT ENERGY">
           <svg width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#a)" fill="#111">
               <path
@@ -194,9 +203,9 @@
         </a>
       </div>
       <div class="main-footer__copyright copyright">
-        <p class="copyright__text">
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
-        </p>
+        </a>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -207,7 +216,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>

@@ -1,0 +1,17 @@
+$main-font: oswald, arial, sans-serif;
+$second-font: lato, arial, sans-serif;
+$main-background-color: #ffffff;
+$second-background-color: #f2f2f2;
+$main-color: #000000;
+$second-color: #444444;
+$decorative-color: #ffffff;
+
+@mixin main-paragraph {
+  // font-family: $font-second;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  // color: $second-color;
+}
