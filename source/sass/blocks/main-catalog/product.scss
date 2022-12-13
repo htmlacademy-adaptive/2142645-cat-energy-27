@@ -1,0 +1,31 @@
+.product__title {
+  margin: 0;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.product__parameter {
+  margin: 0;
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $second-color;
+}
+
+.product__meaning {
+  margin: 0;
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $second-color;
+}
