@@ -1,0 +1,21 @@
+.cat-data-form__label {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $second-color;
+}
+
+.cat-data-form__input {
+  &::placeholder {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $second-color;
+  }
+}

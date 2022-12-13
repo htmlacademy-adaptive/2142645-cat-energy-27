@@ -1,0 +1,17 @@
+.main-nav {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.main-nav__list {
+  list-style-type: none;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $main-color;
+}

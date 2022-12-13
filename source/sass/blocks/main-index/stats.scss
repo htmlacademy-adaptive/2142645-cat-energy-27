@@ -1,0 +1,19 @@
+.stats__meaning {
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $main-color;
+}
+
+.stats__description {
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: $second-color;
+}

@@ -1,0 +1,33 @@
+.proposal__wrapper {
+  padding: 20px;
+}
+
+.proposal__container {
+  background-color: $second-background-color;
+}
+
+.proposal__title {
+  margin: 0;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $main-color;
+}
+
+.proposal__description {
+  @include main-paragraph;
+}
+
+.proposal__link {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $main-color;
+  text-decoration: none;
+}

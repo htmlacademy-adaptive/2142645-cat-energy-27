@@ -1,0 +1,16 @@
+.button {
+  background-color: #68b738;
+  color: $decorative-color;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &--program-selection {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

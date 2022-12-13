@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
 </head>
 
 <body class="page__body">
@@ -53,9 +55,10 @@
       </nav>
     </div>
   </header>
+
   <main class="catalog-container">
-    <div class="catalog-container__wrapper">
-      <section class="catalog">
+    <section class="catalog">
+      <div class="catalog__wrapper">
         <h1 class="catalog__title">
           Каталог продукции
         </h1>
@@ -289,8 +292,10 @@
             показать все
           </button>
         </div>
-      </section>
-      <section class=" additional-products">
+      </div>
+    </section>
+    <section class=" additional-products">
+      <div class="additional-products__wrapper">
         <h2 class="additional-products__title">
           Дополнительные товары
         </h2>
@@ -357,15 +362,17 @@
           </li>
         </ol>
         <div class="additional-products__proposal proposal-wrapper">
-          <p class="proposal-wrapper__text">
-            Закажите все <br>и получите чехол для <br>кота в подарок!
-          </p>
+          <div class="proposal-wrapper__background-color">
+            <p class="proposal-wrapper__text">
+              Закажите все <br>и получите чехол для <br>кота в подарок!
+            </p>
+          </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
-  <footer class="main-footer">
 
+  <footer class="main-footer">
     <div class="main-footer__wrapper address-wrapper">
       <p class="main-footer__invite address-wrapper__invite">
         приглашаем <br>к сотрудничеству <br>дилеров!
@@ -429,7 +436,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>

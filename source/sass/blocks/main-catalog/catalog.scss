@@ -1,0 +1,22 @@
+.catalog__wrapper {
+  padding: 27px 20px 0 20px;
+}
+
+.catalog__title {
+  margin: 0;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $main-color;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.catalog__list {
+  list-style-type: none;
+}
+
+.catalog__item {
+  border-bottom: 1px solid #ebebeb;
+}

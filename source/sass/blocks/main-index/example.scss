@@ -1,0 +1,28 @@
+.example__wrapper {
+  padding: 25px 20px 40px 20px;
+  background-color: #eaeaea;
+}
+
+.example__title {
+  margin: 0;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $main-color;
+}
+
+.example__description {
+  @include main-paragraph;
+}
+
+.example__cost {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $main-color;
+}

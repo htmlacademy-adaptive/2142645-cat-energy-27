@@ -1,0 +1,33 @@
+.preview__cat-container {
+  box-sizing: border-box;
+  min-height: 302px;
+  background: url("/source/img/index/preview-cat.jpg") no-repeat left;
+}
+
+.previev__background-container {
+  box-sizing: border-box;
+  min-height: 302px;
+  background: rgba(104, 183, 56, 0.85);
+  padding: 27px 20px 0 20px;
+}
+
+.preview__title {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $decorative-color;
+  margin: 0;
+}
+
+.preview__paragraph {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $decorative-color;
+  margin: 0;
+}
