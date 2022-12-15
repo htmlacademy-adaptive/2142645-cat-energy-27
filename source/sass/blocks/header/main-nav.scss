@@ -1,4 +1,6 @@
 .main-nav {
+  display: flex;
+  justify-content: space-between;
   font-family: $main-font;
   font-style: normal;
   font-weight: 500;
@@ -7,19 +9,29 @@
   text-transform: uppercase;
 }
 
-.main-nav__logo-cat-2 {
-  display: none;
-}
-
-.main-nav__logo-cat-3 {
-  display: none;
-}
-
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav__link {
   text-decoration: none;
   color: $main-color;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

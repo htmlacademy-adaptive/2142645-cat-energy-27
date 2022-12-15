@@ -14,7 +14,11 @@
     <div class="main-header__wrapper">
       <nav class="main-header__main-nav main-nav">
         <a href="index.html" class="main-nav__link-logo-cat">
-          <img class="main-nav__logo-cat" src="img/logo/logo-cat.svg" width="33" height="38" alt="Кэт энерджи.">
+          <picture>
+            <source srcset="img/logo/logo-cat-2.svg" media="(min-width: 768px) and (max-width: 1440px)">
+            <source srcset="img/logo/logo-cat-3.svg" media="(min-width: 1440px)">
+            <img class="main-nav__logo-cat-1" src="img/logo/logo-cat-1.svg" width="33" height="38" alt="Кэт энерджи.">
+          </picture>
         </a>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -33,7 +37,7 @@
                 </svg>
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">
                 главная
               </a>
@@ -296,10 +300,10 @@
       </div>
     </section>
     <section class=" additional-products">
+      <h2 class="additional-products__title">
+        Дополнительные товары
+      </h2>
       <div class="additional-products__wrapper">
-        <h2 class="additional-products__title">
-          Дополнительные товары
-        </h2>
         <ol class="additional-products__list">
           <li class="additional-products__item">
             <div class="additional-products__card card">
@@ -314,6 +318,9 @@
                   200 ₽
                 </dd>
               </dl>
+              <button class="card__button-buy button button--order" type="button">
+                заказать
+              </button>
             </div>
           </li>
           <li class="additional-products__item">
@@ -329,6 +336,9 @@
                   50 ₽
                 </dd>
               </dl>
+              <button class="card__button-buy button button--order" type="button">
+                заказать
+              </button>
             </div>
           </li>
           <li class="additional-products__item">
@@ -344,6 +354,9 @@
                   100 ₽
                 </dd>
               </dl>
+              <button class="card__button-buy button button--order" type="button">
+                заказать
+              </button>
             </div>
           </li>
           <li class="additional-products__item">
@@ -359,6 +372,9 @@
                   300 ₽
                 </dd>
               </dl>
+              <button class="card__button-buy button button--order" type="button">
+                заказать
+              </button>
             </div>
           </li>
         </ol>
@@ -375,17 +391,17 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper address-wrapper">
-      <p class="main-footer__invite address-wrapper__invite">
+      <p class="address-wrapper__invite">
         приглашаем <br>к сотрудничеству <br>дилеров!
       </p>
-      <address class="main-footer__address address-wrapper__address">
+      <address class="address-wrapper__address">
         ул. Большая <br>Конюшенная, д. 19/8 <br>Санкт-Петербург
       </address>
-      <img class="main-footer__maps address-wrapper__maps" width="320" height="362" src="img/maps.jpg" alt="Карта.">
     </div>
-    <div class="main-footer__wrapper ">
-      <div class="main-footer__logo logo-wrapper">
-        <a class="logo-wrapper__link logo-text" href="index.html" aria-label="CAT ENERGY">
+    <img class="main-footer__maps" width="320" height="362" src="img/maps.jpg" alt="Карта.">
+    <div class="main-footer__links-container">
+      <div class="main-footer__logo">
+        <a class="main-footer__logo-text logo-text" href="index.html" aria-label="CAT ENERGY">
           <svg width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#a)" fill="#111">
               <path
@@ -424,9 +440,9 @@
         </a>
       </div>
       <div class="main-footer__copyright copyright">
-        <p class="copyright__text">
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
-        </p>
+        </a>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path

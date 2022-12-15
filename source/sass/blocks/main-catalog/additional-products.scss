@@ -23,3 +23,9 @@
     border-top: 1px solid #cdcdcd;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additional-products__wrapper {
+    display: flex;
+  }
+}

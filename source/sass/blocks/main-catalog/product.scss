@@ -9,7 +9,13 @@
   color: #222222;
 }
 
+.product__parameter-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .product__parameter {
+  display: inline-block;
   margin: 0;
   font-family: $second-font;
   font-style: normal;
@@ -21,6 +27,7 @@
 }
 
 .product__meaning {
+  display: inline-block;
   margin: 0;
   font-family: $second-font;
   font-style: normal;

@@ -20,3 +20,16 @@
 .catalog__item {
   border-bottom: 1px solid #ebebeb;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
