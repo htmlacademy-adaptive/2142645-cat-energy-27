@@ -14,3 +14,11 @@
     line-height: 18px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button--program-selection {
+    position: absolute;
+    top: 250px;
+    left: 120px;
+  }
+}
