@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
@@ -14,7 +15,11 @@
     <div class="main-header__wrapper">
       <nav class="main-header__main-nav main-nav">
         <a href="index.html" class="main-nav__link-logo-cat">
-          <img class="main-nav__logo-cat" src="img/logo/logo-cat.svg" width="33" height="38" alt="Кэт энерджи.">
+          <picture>
+            <source srcset="img/logo/logo-cat-2.svg" media="(min-width: 768px) and (max-width: 1440px)">
+            <source srcset="img/logo/logo-cat-3.svg" media="(min-width: 1440px)">
+            <img class="main-nav__logo-cat-1" src="img/logo/logo-cat-1.svg" width="33" height="38" alt="Кэт энерджи.">
+          </picture>
         </a>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -33,7 +38,7 @@
                 </svg>
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">
                 главная
               </a>
@@ -69,7 +74,7 @@
           </p>
         </div>
       </div>
-      <img src="img/index/product-preview.png" alt="CAT ENERGY КУРИЦА" width="280" height="270">
+      <img class="preview-photos" src="img/index/product-preview.png" alt="CAT ENERGY КУРИЦА" width="280" height="270">
       <a href="form.html" class="preview__link button button--program-selection">
         подобрать программу
       </a>
@@ -106,18 +111,20 @@
         <h2 class="description__title">
           Как это работает
         </h2>
-        <p class="description__paragraph description__paragraph--useful">
-          Функциональное питание <br>содержит только полезные <br>питательные вещества.
-        </p>
-        <p class="description__paragraph description__paragraph--powder">
-          Выпускается в виде порошка, <br>который нужно лишь залить <br>кипятком и готово.
-        </p>
-        <p class="description__paragraph description__paragraph--dosage">
-          Замените один-два приема <br>обычной еды на наше <br>функциональное питание.
-        </p>
-        <p class="description__paragraph description__paragraph--month">
-          Уже через месяц <br>наслаждайтесь изменениями <br>к лучшему вашего питомца!
-        </p>
+        <div class="description__container">
+          <p class="description__paragraph description__paragraph--useful">
+            Функциональное питание <br>содержит только полезные <br>питательные вещества.
+          </p>
+          <p class="description__paragraph description__paragraph--powder">
+            Выпускается в виде порошка, <br>который нужно лишь залить <br>кипятком и готово.
+          </p>
+          <p class="description__paragraph description__paragraph--dosage">
+            Замените один-два приема <br>обычной еды на наше <br>функциональное питание.
+          </p>
+          <p class="description__paragraph description__paragraph--month">
+            Уже через месяц <br>наслаждайтесь изменениями <br>к лучшему вашего питомца!
+          </p>
+        </div>
       </div>
     </section>
     <section class="example">
@@ -130,23 +137,32 @@
           результат без изнуряющих <br>тренировок! При этом он не менял своих <br>привычек и по-прежнему спит по 16
           часов <br>в день.
         </p>
-        <dl class="example__stats stats">
-          <dt class="stats__meaning">
-            5 КГ
-          </dt>
-          <dd class="stats__description">
-            снижение веса
-          </dd>
-          <dt class="stats__meaning">
-            60 ДНЕЙ
-          </dt>
-          <dd class="stats__description">
-            затрачено времени
-          </dd>
-        </dl>
-        <p class="example__cost">
-          Затраты на питание: 15 000 РУБ.
-        </p>
+        <div class="example__block">
+          <dl class="example__stats stats">
+            <dt class="stats__meaning">
+              5 КГ
+            </dt>
+            <dd class="stats__description">
+              снижение веса
+            </dd>
+          </dl>
+          <dl class="example__stats stats">
+            <dt class="stats__meaning">
+              60 ДНЕЙ
+            </dt>
+            <dd class="stats__description">
+              затрачено времени
+            </dd>
+          </dl>
+          <dl class="example__cost">
+            <dt class="example__cost-text">
+              Затраты на питание:
+            </dt>
+            <dd class="example__cost-price">
+              15 000 РУБ.
+            </dd>
+          </dl>
+        </div>
         <img src="img/index/example-cat.png" width="280" height="256" alt="Сравнение до и после похудения кота.">
       </div>
     </section>

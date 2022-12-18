@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
@@ -10,9 +11,14 @@
 
 <body class="page__body">
   <header class="main-header">
+    <div class="main-header__wrapper">
       <nav class="main-header__main-nav main-nav">
         <a href="index.html" class="main-nav__link-logo-cat">
-          <img class="main-nav__logo-cat" src="img/logo/logo-cat.svg" width="33" height="38" alt="Кэт энерджи.">
+          <picture>
+            <source srcset="img/logo/logo-cat-2.svg" media="(min-width: 768px) and (max-width: 1440px)">
+            <source srcset="img/logo/logo-cat-3.svg" media="(min-width: 1440px)">
+            <img class="main-nav__logo-cat-1" src="img/logo/logo-cat-1.svg" width="33" height="38" alt="Кэт энерджи.">
+          </picture>
         </a>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -31,7 +37,7 @@
                 </svg>
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">
                 главная
               </a>
@@ -52,6 +58,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </nav>
+    </div>
   </header>
 
   <main class="form-container">
@@ -64,34 +71,36 @@
           Заполните анкету, и мы подберем <br>программу питания для вашего кота
         </p>
         <form class="program-selection__form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="program-selection__cat-data-form cat-data-form">
-            <label class="cat-data-form__label">
-              ИМЯ:*
-              <input class="cat-data-form__input" name="name" type="text" placeholder="Барсик" required>
-            </label>
-            <label class="cat-data-form__label">
-              Вес (кг):*
-              <input class="cat-data-form__input" name="mass" type="text" placeholder="7" required>
-            </label>
-            <label class="cat-data-form__label">
-              Возраст (лет):
-              <input class="cat-data-form__input" name="age" type="text" placeholder="7">
-            </label>
-          </fieldset>
-          <fieldset class="program-selection__result-form result-form">
-            <label class="result-form__label">
-              <input class="result-form__radio" type="radio" name="program" value="skinny" checked>
-              похудение
-            </label>
-            <label class="result-form__label">
-              <input class="result-form__radio" type="radio" name="program" value="muscular">
-              Набор массы
-            </label>
-            <label class="result-form__label">
-              <input class="result-form__radio" type="radio" name="program" value="need-advice">
-              Не знаю (Нужен ваш совет)
-            </label>
-          </fieldset>
+          <div class="program-selection__container">
+            <fieldset class="program-selection__cat-data-form cat-data-form">
+              <label class="cat-data-form__label">
+                ИМЯ:*
+                <input class="cat-data-form__input" name="name" type="text" placeholder="Барсик" required>
+              </label>
+              <label class="cat-data-form__label">
+                Вес (кг):*
+                <input class="cat-data-form__input" name="mass" type="text" placeholder="7" required>
+              </label>
+              <label class="cat-data-form__label">
+                Возраст (лет):
+                <input class="cat-data-form__input" name="age" type="text" placeholder="7">
+              </label>
+            </fieldset>
+            <fieldset class="program-selection__result-form result-form">
+              <label class="result-form__label">
+                <input class="result-form__radio" type="radio" name="program" value="skinny" checked>
+                похудение
+              </label>
+              <label class="result-form__label">
+                <input class="result-form__radio" type="radio" name="program" value="muscular">
+                Набор массы
+              </label>
+              <label class="result-form__label">
+                <input class="result-form__radio" type="radio" name="program" value="need-advice">
+                Не знаю (Нужен ваш совет)
+              </label>
+            </fieldset>
+          </div>
           <fieldset class="program-selection__data-contact data-contact">
             <legend class="data-contact__title">
               Контактные данные <br>(владельца кота)
@@ -144,17 +153,17 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper address-wrapper">
-      <p class="main-footer__invite address-wrapper__invite">
+      <p class="address-wrapper__invite">
         приглашаем <br>к сотрудничеству <br>дилеров!
       </p>
-      <address class="main-footer__address address-wrapper__address">
+      <address class="address-wrapper__address">
         ул. Большая <br>Конюшенная, д. 19/8 <br>Санкт-Петербург
       </address>
-      <img class="main-footer__maps address-wrapper__maps" width="320" height="362" src="img/maps.jpg" alt="Карта.">
     </div>
-    <div class="main-footer__wrapper ">
-      <div class="main-footer__logo logo-wrapper">
-        <a class="logo-wrapper__link logo-text" href="index.html" aria-label="CAT ENERGY">
+    <img class="main-footer__maps" width="320" height="362" src="img/maps.jpg" alt="Карта.">
+    <div class="main-footer__links-container">
+      <div class="main-footer__logo">
+        <a class="main-footer__logo-text logo-text" href="index.html" aria-label="CAT ENERGY">
           <svg width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#a)" fill="#111">
               <path
@@ -193,9 +202,9 @@
         </a>
       </div>
       <div class="main-footer__copyright copyright">
-        <p class="copyright__text">
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
-        </p>
+        </a>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -207,4 +216,5 @@
     </div>
   </footer>
 </body>
+
 </html>

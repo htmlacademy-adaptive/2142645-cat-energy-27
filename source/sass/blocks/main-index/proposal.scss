@@ -31,3 +31,9 @@
   color: $main-color;
   text-decoration: none;
 }
+
+@media (min-width: $desktop-width) {
+  .proposal__wrapper {
+    display: flex;
+  }
+}

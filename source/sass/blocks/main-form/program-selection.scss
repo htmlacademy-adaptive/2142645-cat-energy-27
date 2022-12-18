@@ -18,9 +18,44 @@
 }
 
 .program-selection__cat-data-form {
+  display: grid;
+  grid-template: 1fr;
   border-bottom: 1px solid #ebebeb;
 }
 
 .program-selection__result-form {
+  display: grid;
+  grid-template: 1fr;
   border-bottom: 1px solid #ebebeb;
+}
+
+.program-selection__data-contact {
+  display: grid;
+  grid-template: 1fr;
+}
+
+.program-selection__additionally {
+  display: grid;
+  grid-template: 1fr;
+}
+
+@media (min-width: $tablet-width) {
+  .program-selection__additionally {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-selection__container {
+    display: flex;
+  }
+
+  .program-selection__data-contact {
+    display: flex;
+  }
+
+  .program-selection__additionally {
+    display: flex;
+  }
 }

@@ -4,6 +4,8 @@
 
 .main-footer__maps {
   display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 .main-footer__links-container {
@@ -17,4 +19,29 @@
 
 .main-footer__social {
   border-bottom: 1px solid #ebebeb;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    padding: 60px 70px 56px 70px;
+  }
+
+  .main-footer__links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    position: relative;
+  }
+
+  .main-footer__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    padding: 60px 80px 56px 80px;
+  }
 }

@@ -1,3 +1,8 @@
+.address-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .address-wrapper__invite {
   margin: 0;
   font-family: $main-font;

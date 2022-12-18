@@ -15,3 +15,20 @@
 .description__paragraph {
   @include main-paragraph;
 }
+
+@media (min-width: $tablet-width) {
+  .description__container {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__container {
+    display: flex;
+  }
+
+  .description__paragraph {
+    flex-grow: 1;
+  }
+}
