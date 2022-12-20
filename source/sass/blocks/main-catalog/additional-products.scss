@@ -13,7 +13,7 @@
 }
 
 .additional-products__list {
-  list-style-type: none;
+  @include reset-list;
 }
 
 .additional-products__item {

@@ -1,37 +1,148 @@
 .main-nav {
+  position: relative;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
+}
+
+.main-nav__link-logo-cat {
+  text-decoration: none;
+  align-self: flex-start;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-nav__logo-cat-1 {
+  display: block;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+
+  @include reset-list;
+}
+
+.main-nav__item {
+  display: flex;
+  align-items: center;
+  min-height: 66px;
+}
+
+.main-nav__link,
+.main-nav__logo-text {
+  display: block;
+  padding: 7px;
+  margin: -7px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-}
-
-.main-nav__list {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav__link {
   text-decoration: none;
   color: $main-color;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__toggle {
+  box-sizing: content-box;
+  width: 24px;
+  height: 20px;
+  padding: 4px;
+  margin: -4px;
+  border: 0;
+  cursor: pointer;
+  background: url("/source/img/button-close-open/close-button.svg") no-repeat
+    center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  background: url("/source/img/button-close-open/open-button.svg") no-repeat
+    center;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .drop-menu {
+    display: none;
+  }
+
+  .main-nav--open .drop-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 320px;
+    padding: 0 6.25% 0 6.25%;
+    background-color: $decorative-color;
+  }
+
+  .main-nav--nojs .drop-menu {
+    position: static;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .drop-menu {
+    position: static;
+    width: auto;
+    padding: 0;
+    margin-left: auto;
   }
 
   .main-nav__list {
     flex-direction: row;
   }
 
+  .main-nav__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .main-nav__link
+
   .main-nav__toggle {
     display: none;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: $decorative-color;
+  }
+
+
 }

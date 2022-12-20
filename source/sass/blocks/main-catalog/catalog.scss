@@ -14,7 +14,7 @@
 }
 
 .catalog__list {
-  list-style-type: none;
+  @include reset-list;
 }
 
 .catalog__item {

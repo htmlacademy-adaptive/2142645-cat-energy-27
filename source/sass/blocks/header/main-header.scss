@@ -1,4 +1,21 @@
-.main-header {
-  padding: 10px 20px 17px 20px;
-  border-bottom: 1px solid #ebebeb;
+.main-header__main-nav {
+  box-sizing: border-box;
+  min-width: 320px;
+  min-height: 66px;
+  padding: 10px 6.25% 10px 6.25%;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__main-nav {
+    padding: 0 3.9% 0 3.9%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__main-nav {
+    box-sizing: border-box;
+    padding: 0 110px 0 110px;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
 }
