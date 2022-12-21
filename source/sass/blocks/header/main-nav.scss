@@ -87,7 +87,7 @@
     center;
 }
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: $tablet-width) {
   .main-nav--closed .drop-menu {
     display: none;
   }
@@ -130,8 +130,6 @@
     line-height: 24px;
   }
 
-  .main-nav__link
-
   .main-nav__toggle {
     display: none;
   }
@@ -143,6 +141,4 @@
     line-height: 30px;
     color: $decorative-color;
   }
-
-
 }

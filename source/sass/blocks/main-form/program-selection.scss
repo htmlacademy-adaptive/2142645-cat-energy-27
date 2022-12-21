@@ -19,24 +19,24 @@
 
 .program-selection__cat-data-form {
   display: grid;
-  grid-template: 1fr;
+  grid-template-rows: 1fr;
   border-bottom: 1px solid #ebebeb;
 }
 
 .program-selection__result-form {
   display: grid;
-  grid-template: 1fr;
+  grid-template-rows: 1fr;
   border-bottom: 1px solid #ebebeb;
 }
 
 .program-selection__data-contact {
   display: grid;
-  grid-template: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .program-selection__additionally {
   display: grid;
-  grid-template: 1fr;
+  grid-template-rows: 1fr;
 }
 
 @media (min-width: $tablet-width) {
