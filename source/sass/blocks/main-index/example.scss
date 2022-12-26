@@ -1,10 +1,13 @@
 .example__wrapper {
-  padding: 25px 20px 40px 20px;
+  padding: 25px 6.25% 40px 6.25%;
   background-color: #eaeaea;
+
+  @include container;
 }
 
 .example__title {
   margin: 0;
+  margin-bottom: 40px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
@@ -15,16 +18,26 @@
 
 .example__description {
   @include main-paragraph;
+  margin-bottom: 20px;
 }
 
 .example__block {
   display: grid;
-  grid-template: 1fr 1fr / auto auto;
+  grid-template: auto auto / 1fr 1fr;
+  margin-bottom: 20px;
+  row-gap: 20px;
+}
+
+.example__stats {
+  margin: 0;
 }
 
 .example__cost {
   grid-column: 1/3;
   justify-self: center;
+  display: flex;
+  gap: 3px;
+  margin: 0;
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
@@ -34,9 +47,52 @@
   color: $main-color;
 }
 
+.example__cost-price {
+  margin: 0;
+}
+
 @media (min-width: $tablet-width) {
+  .example__wrapper {
+    padding: 43px 3.9% 0 3.9%;
+    background-color: $decorative-color;
+    min-height: 619px;
+  }
+
   .example__block {
     display: flex;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__cost {
+  }
+
+  .stats__meaning {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .stats__description {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__cost-text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__cost-price {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

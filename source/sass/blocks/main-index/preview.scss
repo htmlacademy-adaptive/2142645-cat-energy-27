@@ -1,19 +1,23 @@
 .preview {
-  // position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 480px;
+  align-items: center;
 }
 
 .preview__cat-container {
-  width: 100%;
-  min-width: 320px;
   box-sizing: border-box;
+  width: 100%;
   min-height: 302px;
   background: url("../img/index/preview-cat.jpg") no-repeat center;
   background-size: cover;
+
+  @include container;
 }
 
 .preview__background-container {
-  order: 1;
   width: 100%;
   padding: 27px 6.25% 6.25%;
   box-sizing: border-box;
@@ -48,7 +52,7 @@
 .preview-photos {
   width: 100%;
   height: auto;
-  max-width: 709px;
+  max-width: 280px;
   position: absolute;
   top: 167px;
 }
@@ -67,7 +71,7 @@
   .preview__background-container {
     background: none;
     min-height: auto;
-    padding: 27px 117px 117px;
+    padding: 27px 15.23% 0 15.23%;
   }
 
   .preview__title {
@@ -84,16 +88,31 @@
     line-height: 20px;
     text-align: left;
   }
+
+  .preview-photos {
+    position: static;
+    margin-top: 29px;
+    max-width: 709px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .preview {
     position: relative;
+    min-height: 553px;
+    padding-bottom: 82px;
   }
 
   .preview-photos {
-    top: 141px;
-    left: 38.7%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 558px;
+    margin: 0;
     max-width: 558px;
+  }
+
+  .preview__background-container {
+    padding: 82px 0 0 190px;
   }
 }

@@ -1,13 +1,19 @@
 .proposal__wrapper {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 6.25%;
+
+  @include container;
 }
 
 .proposal__container {
   background-color: $second-background-color;
+  padding: 30px 20px 18px 20px;
 }
 
 .proposal__title {
-  margin: 0;
+  margin: 0 0 29px 71px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
@@ -19,6 +25,7 @@
 
 .proposal__description {
   @include main-paragraph;
+  margin-bottom: 38px;
 }
 
 .proposal__link {
@@ -32,8 +39,45 @@
   text-decoration: none;
 }
 
+@media (min-width: $tablet-width) {
+  .proposal__wrapper {
+    gap: 30px;
+    padding: 0 3.9%;
+  }
+
+  .proposal__container {
+    padding: 77px 44.63% 53px 7.34%;
+  }
+
+  .proposal__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 34px 0;
+  }
+
+  .proposal__description {
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .proposal__wrapper {
-    display: flex;
+    flex-direction: row;
+    padding: 0 7.63%;
+  }
+
+  .proposal__container {
+    padding: 77px 52px 55px 52px;
+  }
+
+  .proposal__title {
+    margin-bottom: 73px;
+    margin-left: 162px;
+  }
+
+  .proposal__description {
+    margin-bottom: 23px;
   }
 }

@@ -1,5 +1,7 @@
 .description__wrapper {
-  padding: 0 20px 49px 20px;
+  padding: 20px 6.25% 49px 6.25%;
+
+  @include container;
 }
 
 .description__title {
@@ -10,22 +12,53 @@
   line-height: 40px;
   color: $main-color;
   margin: 0;
+  margin-bottom: 40px;
+}
+
+.description__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .description__paragraph {
   @include main-paragraph;
+  margin: 0;
+  margin-left: 80px;
 }
 
 @media (min-width: $tablet-width) {
+  .description__wrapper {
+    padding: 45px 3.9% 47px 3.9%;
+  }
+
   .description__container {
-    display: grid;
-    grid-template: 1fr 1fr/ 1fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 37px;
+  }
+
+  .description__title {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .description__paragraph {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .description__wrapper {
+    padding: 71px 7.63% 69px 7.63%;
+  }
+
   .description__container {
-    display: flex;
+    flex-direction: row;
   }
 
   .description__paragraph {
