@@ -3,14 +3,17 @@
 @import "global/fonts";
 @import "global/global";
 @import "blocks/button";
+@import "blocks/logo-text";
 @import "blocks/header/main-header";
+@import "blocks/header/header-top";
 @import "blocks/header/main-nav";
-@import "blocks/main-index/main-container.scss";
+@import "blocks/header/preview";
 @import "blocks/main-index/description";
 @import "blocks/main-index/example";
-@import "blocks/main-index/preview";
+@import "blocks/main-index/main-container";
 @import "blocks/main-index/proposal";
 @import "blocks/main-index/stats";
+@import "blocks/main-form/form-container.scss";
 @import "blocks/main-form/additionally";
 @import "blocks/main-form/cat-data-form";
 @import "blocks/main-form/comment";
@@ -26,5 +29,4 @@
 @import "blocks/footer/address-wrapper";
 @import "blocks/footer/copyright";
 @import "blocks/footer/main-footer";
-@import "blocks/footer/logo-text.scss";
 @import "blocks/footer/social";

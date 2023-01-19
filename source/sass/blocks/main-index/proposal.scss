@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 0 6.25%;
+  padding: 0 20px;
 
   @include container;
 }
@@ -29,6 +29,8 @@
 }
 
 .proposal__link {
+  position: relative;
+  padding-right: 39px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
@@ -37,12 +39,37 @@
   text-transform: uppercase;
   color: $main-color;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    background: url("../img/index/arrow/arrow.svg") no-repeat center;
+    width: 24px;
+    height: 12px;
+    transform: translateY(-50%);
+  }
+
+  &:hover {
+    padding-right: 47px;
+
+    &::after {
+      width: 32px;
+      background: url("../img/index/arrow/long-arrow.svg") no-repeat center;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .proposal__wrapper {
     gap: 30px;
-    padding: 0 3.9%;
+    padding: 0 30px 0 31px;
   }
 
   .proposal__container {
@@ -60,12 +87,20 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  .proposal__link {
+    padding-right: 49px;
+
+    &:hover {
+      padding-right: 57px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .proposal__wrapper {
     flex-direction: row;
-    padding: 0 7.63%;
+    padding: 0 110px;
   }
 
   .proposal__container {

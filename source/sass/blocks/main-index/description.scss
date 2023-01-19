@@ -1,5 +1,5 @@
 .description__wrapper {
-  padding: 20px 6.25% 49px 6.25%;
+  padding: 20px 20px 49px 20px;
 
   @include container;
 }
@@ -15,10 +15,12 @@
   margin-bottom: 40px;
 }
 
-.description__container {
+.description__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @include reset-list;
 }
 
 .description__paragraph {
@@ -29,20 +31,41 @@
 
 @media (min-width: $tablet-width) {
   .description__wrapper {
-    padding: 45px 3.9% 47px 3.9%;
+    padding: 45px 30px 47px 31px;
   }
 
-  .description__container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .description__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     row-gap: 37px;
+    column-gap: 57px;
+    // column-gap: 130px;
+    counter-reset: index;
   }
 
   .description__title {
     margin-bottom: 32px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  .description__item {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 280px;
+    padding-top: 151px;
+
+    &::before {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 113px;
+      font-size: 280px;
+      line-height: 280px;
+      color: $second-background-color;
+      counter-increment: index;
+      content: counters(index, ".", decimal) " ";
+    }
   }
 
   .description__paragraph {
@@ -54,11 +77,12 @@
 
 @media (min-width: $desktop-width) {
   .description__wrapper {
-    padding: 71px 7.63% 69px 7.63%;
+    padding: 71px 106px 69px 110px;
   }
 
-  .description__container {
-    flex-direction: row;
+  .description__list {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 70px;
   }
 
   .description__paragraph {

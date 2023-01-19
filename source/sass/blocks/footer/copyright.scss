@@ -1,16 +1,5 @@
-.copyright {
-  &:hover {
-    .copyright__icon {
-      fill: #68B738;
-    }
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
 .copyright__text {
+  display: block;
   padding: 6px 0 9px 0;
   font-family: $second-font;
   font-style: normal;
@@ -19,14 +8,29 @@
   line-height: 19px;
   color: $second-color;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link {
+  display: block;
   text-decoration: none;
 }
 
 .copyright__icon {
+  display: block;
   fill: #666666;
+
+  &:active {
+    opacity: 0.3;
+    fill: #68b738;
+  }
+}
+
+.copyright__link:hover .copyright__icon {
+  fill: #68b738;
 }
 
 @media (min-width: $tablet-width) {

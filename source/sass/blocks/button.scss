@@ -1,4 +1,5 @@
 .button {
+  box-sizing: border-box;
   background-color: #68b738;
   color: $decorative-color;
   font-family: $main-font;
@@ -8,17 +9,88 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+
+  &:hover {
+    background: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   &--program-selection {
     font-size: 14px;
     line-height: 18px;
+    padding: 7px 20px;
+    min-width: 280px;
+  }
+
+  &--submit {
+    padding: 7px 20px;
+    min-width: 280px;
+  }
+
+  &--order {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    min-width: 280px;
+    width: 100%;
+    height: 40px;
+  }
+
+  &--secondary {
+    padding: 10px 20px;
+    color: $second-color;
+    background: $second-background-color;
+    min-width: 280px;
+    width: 100%;
+
+    &:hover {
+      background: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
-  .button--program-selection {
-    position: absolute;
-    top: 250px;
-    left: 120px;
+  .button {
+    &--program-selection {
+      width: 244px;
+      padding: 14px 26px;
+      font-size: 20px;
+      line-height: 20px;
+      min-width: 244px;
+    }
+
+    &--submit {
+      width: 282px;
+      min-height: 52px;
+      min-width: 282px;
+      padding: 13px 20px;
+      font-size: 20px;
+      line-height: 0;
+    }
+
+    &--order {
+      min-width: auto;
+    }
+
+    &--secondary {
+      min-width: auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--submit {
+      width: 568px;
+    }
   }
 }
