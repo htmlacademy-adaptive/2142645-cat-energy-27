@@ -1,5 +1,5 @@
 .card__title {
-  margin: 0;
+  margin: 13px 0;
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
@@ -21,4 +21,67 @@
 
 .card__quantity-list {
   display: flex;
+  justify-content: space-between;
+  margin: 0 0 15px 0;
+}
+
+.card__button-buy {
+  margin-bottom: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    padding: 26px 38px 28px 38px;
+  }
+
+  .card__title {
+    grid-column: 1/2;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .card__quantity-list {
+    display: grid;
+    grid-template: auto / auto 90px;
+    justify-self: end;
+    margin: 0;
+  }
+
+  .card__quantity,
+  .card__price {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .card__price {
+    margin: 0;
+    justify-self: end;
+  }
+
+  .card__button-buy {
+    grid-column: 1/-1;
+    margin: 23px 0 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 16px 0;
+  }
+
+  .card__quantity-list {
+    margin-left: auto;
+    grid-template: auto / 195px 90px;
+  }
+
+  .card__button-buy {
+    margin: 0 0 0 40px;
+    min-width: 244px;
+    width: auto;
+  }
 }

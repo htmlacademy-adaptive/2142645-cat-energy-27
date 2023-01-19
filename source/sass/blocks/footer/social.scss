@@ -1,8 +1,11 @@
 .social__link {
+  display: block;
   text-decoration: none;
 }
 
 .social__icon {
+  display: block;
+
   fill: #666666;
 
   &:hover {
