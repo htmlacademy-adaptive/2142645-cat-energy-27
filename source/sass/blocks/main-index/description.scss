@@ -1,5 +1,7 @@
 .description__wrapper {
-  padding: 0 20px 49px 20px;
+  padding: 20px 20px 49px 20px;
+
+  @include container;
 }
 
 .description__title {
@@ -10,22 +12,77 @@
   line-height: 40px;
   color: $main-color;
   margin: 0;
+  margin-bottom: 40px;
+}
+
+.description__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include reset-list;
 }
 
 .description__paragraph {
   @include main-paragraph;
+  margin: 0;
+  margin-left: 80px;
 }
 
 @media (min-width: $tablet-width) {
-  .description__container {
+  .description__wrapper {
+    padding: 45px 30px 47px 31px;
+  }
+
+  .description__list {
     display: grid;
-    grid-template: 1fr 1fr/ 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 37px;
+    column-gap: 57px;
+    // column-gap: 130px;
+    counter-reset: index;
+  }
+
+  .description__title {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .description__item {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 280px;
+    padding-top: 151px;
+
+    &::before {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 113px;
+      font-size: 280px;
+      line-height: 280px;
+      color: $second-background-color;
+      counter-increment: index;
+      content: counters(index, ".", decimal) " ";
+    }
+  }
+
+  .description__paragraph {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .description__container {
-    display: flex;
+  .description__wrapper {
+    padding: 71px 106px 69px 110px;
+  }
+
+  .description__list {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 70px;
   }
 
   .description__paragraph {

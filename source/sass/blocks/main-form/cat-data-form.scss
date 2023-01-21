@@ -1,4 +1,18 @@
+.cat-data-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  @include reset-fieldset;
+}
+
+.cat-data-form__container {
+  display: flex;
+  align-items: center;
+}
+
 .cat-data-form__label {
+  white-space: nowrap;
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
@@ -9,13 +23,61 @@
 }
 
 .cat-data-form__input {
+  flex-grow: 1;
+  box-sizing: border-box;
+  width: 150px;
+  padding: 14px 20px 13px 20px;
+  margin-left: 13px;
+  outline: 1px solid #e7e7e7;
+  outline-offset: -1px;
+  border: 0;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $second-color;
+
   &::placeholder {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
     color: $second-color;
+    font-size: 16px;
+  }
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+    outline-offset: -1px;
+  }
+
+  &:focus {
+    outline: 2px solid $second-color;
+    outline-offset: -2px;
+  }
+
+  &--input-error {
+    outline: 2px solid #ff8282;
+    outline-offset: -2px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cat-data-form {
+    gap: 20px;
+  }
+
+  .cat-data-form__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .cat-data-form__input {
+    padding: 11px 20px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &::placeholder {
+      font-size: 20px;
+    }
   }
 }

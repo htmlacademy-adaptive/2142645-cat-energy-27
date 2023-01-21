@@ -1,14 +1,36 @@
 .proposal-wrapper {
-  background: url("/source/img/proposal-cat.png") no-repeat left;
+  background: url("../img/proposal/proposal-cat.png") no-repeat center;
+  background-size: cover;
   min-height: 290px;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/proposal/proposal-cat@2x.png") no-repeat center;
+    background-size: cover;
+  }
 }
 
 .proposal-wrapper__background-color {
-  background: rgba(104, 183, 56, 0.85);
+  position: relative;
+  box-sizing: border-box;
+  padding: 189px 20px 43px 20px;
   min-height: 290px;
+  background: rgba(104, 183, 56, 0.85);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 59px;
+    left: 50%;
+    width: 80px;
+    height: 83px;
+    background: url("../img/proposal/proposal-icon-desktop.svg") no-repeat
+      center;
+    transform: translateX(-50%);
+  }
 }
 
 .proposal-wrapper__text {
+  text-align: center;
   margin: 0;
   font-family: $second-font;
   font-style: normal;
@@ -16,4 +38,85 @@
   font-size: 16px;
   line-height: 20px;
   color: $decorative-color;
+}
+
+@media (min-width: 500px) {
+  .proposal-wrapper {
+    min-height: 500px;
+  }
+
+  .proposal-wrapper__background-color {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .proposal-wrapper {
+    min-height: 200px;
+    background: url("../img/proposal/proposal-cat-desktop.png") no-repeat center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/proposal/proposal-cat-desktop@2x.png") no-repeat
+        center;
+      background-size: cover;
+    }
+  }
+
+  .proposal-wrapper__background-color {
+    min-height: 200px;
+    padding: 71px 30px 30px 422px;
+
+    &::before {
+      top: 50%;
+      left: 77px;
+      transform: translateY(-50%);
+    }
+  }
+
+  .proposal-wrapper__text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1000px) {
+  .proposal-wrapper {
+    min-height: 300px;
+  }
+
+  .proposal-wrapper__background-color {
+    min-height: 300px;
+    padding: 121px 30px 30px 500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .proposal-wrapper {
+    min-height: 288px;
+    width: 244px;
+    background: url("../img/proposal/proposal-cat.png") no-repeat right;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/proposal/proposal-cat@2x.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  .proposal-wrapper__background-color {
+    min-height: 288px;
+    width: 244px;
+    padding: 185px 25px 25px 25px;
+
+    &::before {
+      top: 56px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .proposal-wrapper__text {
+    text-align: center;
+  }
 }

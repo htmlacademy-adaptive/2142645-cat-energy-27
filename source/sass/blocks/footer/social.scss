@@ -1,3 +1,18 @@
 .social__link {
+  display: block;
   text-decoration: none;
+}
+
+.social__icon {
+  display: block;
+
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
