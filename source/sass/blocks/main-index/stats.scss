@@ -7,10 +7,10 @@
 
 .stats__meaning {
   text-align: center;
-  padding-top: 14px;
+  padding: 14px;
   box-sizing: border-box;
-  width: 124px;
-  height: 56px;
+  min-width: 124px;
+  min-height: 56px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   font-family: $main-font;
@@ -39,8 +39,8 @@
 
 @media (min-width: $tablet-width) {
   .stats__meaning {
-    width: 162px;
-    height: 72px;
+    min-width: 162px;
+    min-height: 72px;
     font-size: 30px;
     line-height: 37px;
   }

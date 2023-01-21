@@ -26,9 +26,11 @@
   flex-grow: 1;
   box-sizing: border-box;
   width: 150px;
-  padding: 14px 20px;
+  padding: 14px 20px 13px 20px;
   margin-left: 13px;
-  border: 1px solid #e7e7e7;
+  outline: 1px solid #e7e7e7;
+  outline-offset: -1px;
+  border: 0;
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;

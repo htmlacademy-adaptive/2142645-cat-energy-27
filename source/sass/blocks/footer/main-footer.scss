@@ -52,15 +52,6 @@
   padding-bottom: 21px;
 }
 
-.main-footer__copyright {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 22px;
-  padding-bottom: 22px;
-}
-
 @media (min-width: $tablet-width) {
   .main-footer__wrapper {
     padding: 60px 70px 56px 70px;
@@ -82,10 +73,6 @@
     margin: 0 auto 0;
     border: 0;
     transform: translateX(13px);
-  }
-
-  .main-footer__copyright {
-    padding: 0;
   }
 
   .main-footer__logo-container {

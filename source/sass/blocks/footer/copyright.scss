@@ -1,3 +1,13 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
 .copyright__text {
   display: block;
   padding: 6px 0 9px 0;
@@ -34,7 +44,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .copyright__text {
-    margin-right: 23px;
+  .copyright {
+    gap: 28px;
+    padding: 0;
   }
 }

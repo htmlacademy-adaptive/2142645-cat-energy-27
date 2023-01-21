@@ -4,12 +4,12 @@
 }
 
 .product__link-photo {
+  grid-column: 1/2;
+  grid-row: 1/3;
   text-decoration: none;
 }
 
 .product__photo {
-  grid-column: 1/2;
-  grid-row: 1/3;
   width: 100%;
   height: auto;
 }
@@ -53,6 +53,7 @@
 
 .product__parameter-container {
   display: flex;
+  gap: 20px;
   justify-content: space-between;
 }
 
@@ -71,6 +72,7 @@
 .product__meaning {
   display: inline-block;
   margin: 0;
+  white-space: nowrap;
   font-family: $second-font;
   font-style: normal;
   font-weight: 400;

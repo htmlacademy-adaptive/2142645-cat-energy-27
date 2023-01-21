@@ -10,10 +10,23 @@
 }
 
 .proposal-wrapper__background-color {
+  position: relative;
   box-sizing: border-box;
   padding: 189px 20px 43px 20px;
   min-height: 290px;
   background: rgba(104, 183, 56, 0.85);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 59px;
+    left: 50%;
+    width: 80px;
+    height: 83px;
+    background: url("../img/proposal/proposal-icon-desktop.svg") no-repeat
+      center;
+    transform: translateX(-50%);
+  }
 }
 
 .proposal-wrapper__text {
@@ -53,24 +66,18 @@
   .proposal-wrapper__background-color {
     min-height: 200px;
     padding: 71px 30px 30px 422px;
+
+    &::before {
+      top: 50%;
+      left: 77px;
+      transform: translateY(-50%);
+    }
   }
 
   .proposal-wrapper__text {
-    position: relative;
     font-size: 16px;
     line-height: 20px;
     text-align: left;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -14px;
-      left: -335px;
-      width: 80px;
-      height: 83px;
-      background: url("../img/proposal/proposal-icon-desktop.svg") no-repeat
-        center;
-    }
   }
 }
 
@@ -101,14 +108,15 @@
     min-height: 288px;
     width: 244px;
     padding: 185px 25px 25px 25px;
+
+    &::before {
+      top: 56px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   .proposal-wrapper__text {
     text-align: center;
-
-    &::before {
-      top: -120px;
-      left: 50px;
-    }
   }
 }

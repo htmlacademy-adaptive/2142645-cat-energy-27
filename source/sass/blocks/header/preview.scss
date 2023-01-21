@@ -8,9 +8,9 @@
 }
 
 .preview__wrapper {
-  box-sizing: border-box;
   width: 100%;
   min-height: 302px;
+  padding: 27px 20px 150px 20px;
   background-image: linear-gradient(
       rgba(104, 183, 56, 0.85),
       rgba(104, 183, 56, 0.85)
@@ -140,7 +140,7 @@
   }
 
   .preview__wrapper {
-    padding: 0 0 0 190px;
+    padding: 0 775px 0 190px;
   }
 
   .preview__container {

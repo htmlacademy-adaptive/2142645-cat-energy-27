@@ -1,5 +1,7 @@
 .address-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
   justify-content: space-between;
   background: #f2f2f2;
 }
@@ -53,9 +55,7 @@
 @media (min-width: $desktop-width) {
   .address-wrapper {
     background-color: $decorative-color;
-  }
-
-  .address-wrapper__invite {
-    margin-right: 87px;
+    gap: 87px;
+    justify-content: flex-start;
   }
 }

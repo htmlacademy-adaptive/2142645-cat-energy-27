@@ -29,20 +29,22 @@
         left: 50%;
         bottom: 0;
         width: 50%;
-        background: linear-gradient(
+        background-color: rgba(104, 183, 56, 0.85);
+        background-image: linear-gradient(
             rgba(104, 183, 56, 0.85),
             rgba(104, 183, 56, 0.85)
           ),
-          url("../img/index/preview-cat-desctop.jpg") center no-repeat;
+          url("../img/index/preview-cat-desctop.jpg");
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 
         @media (min-resolution: 2dppx) {
-          background: linear-gradient(
+          background-image: linear-gradient(
               rgba(104, 183, 56, 0.85),
               rgba(104, 183, 56, 0.85)
             ),
-            url("../img/index/preview-cat-desctop@2x.jpg") center no-repeat;
-          background-size: cover;
+            url("../img/index/preview-cat-desctop@2x.jpg");
         }
       }
     }
