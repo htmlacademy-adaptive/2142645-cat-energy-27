@@ -66,20 +66,20 @@
           <div class="program-selection__cat-data-container">
             <fieldset class="program-selection__cat-data-form cat-data-form">
               <div class="cat-data-form__container">
-                <label for="name" class="cat-data-form__label">
+                <label for="name" class="cat-data-form__label label label--second-color">
                   ИМЯ:*
                 </label>
                 <input id="name" class="cat-data-form__input" name="name" type="text" placeholder="Барсик" required>
                 <!-- Для активации состояния input error необходимо добавить класс cat-data-form__input--input-error -->
               </div>
               <div class="cat-data-form__container">
-                <label for="mass" class="cat-data-form__label">
+                <label for="mass" class="cat-data-form__label label label--second-color">
                   Вес (кг):*
                 </label>
                 <input id="mass" class="cat-data-form__input" name="mass" type="text" placeholder="7" required>
               </div>
               <div class="cat-data-form__container">
-                <label for="age" class="cat-data-form__label">
+                <label for="age" class="cat-data-form__label label label--second-color">
                   Возраст (лет):
                 </label>
                 <input id="age" class="cat-data-form__input" name="age" type="text" placeholder="7">
@@ -88,19 +88,19 @@
           </div>
           <div class="program-selection__result-container">
             <fieldset class="program-selection__result-form result-form">
-              <label class="result-form__label">
-                <input class="result-form__radio visually-hidden" type="radio" name="program" value="skinny" checked>
-                <span class="result-form__pseudo-checkbox"></span>
+              <label class="result-form__label selector label label--rare-color">
+                <input class="selector__input visually-hidden" type="radio" name="program" value="skinny" checked>
+                <span class="selector__pseudo-checkbox selector__pseudo-checkbox--radio"></span>
                 похудение
               </label>
-              <label class="result-form__label">
-                <input class="result-form__radio visually-hidden" type="radio" name="program" value="muscular">
-                <span class="result-form__pseudo-checkbox"></span>
+              <label class="result-form__label selector label label--rare-color">
+                <input class="selector__input visually-hidden" type="radio" name="program" value="muscular">
+                <span class="selector__pseudo-checkbox selector__pseudo-checkbox--radio"></span>
                 Набор массы
               </label>
-              <label class="result-form__label">
-                <input class="result-form__radio visually-hidden" type="radio" name="program" value="need-advice">
-                <span class="result-form__pseudo-checkbox"></span>
+              <label class="result-form__label selector label label--rare-color">
+                <input class="selector__input visually-hidden" type="radio" name="program" value="need-advice">
+                <span class="selector__pseudo-checkbox selector__pseudo-checkbox--radio"></span>
                 Не знаю (Нужен ваш совет)
               </label>
             </fieldset>
@@ -112,7 +112,7 @@
               Контактные данные <br class="data-contact__break">(владельца кота)
             </legend>
             <div class="data-contact__wrapper">
-              <label class="data-contact__label">
+              <label class="data-contact__label label label--second-color">
                 <!-- Для активации состояния input error необходимо добавить класс data-contact__label-input--error -->
                 E-mail:*
                 <svg class="data-contact__icon data-contact__icon--top-no-center" width="20" height="20"
@@ -122,7 +122,7 @@
                 <input class="data-contact__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com"
                   required>
               </label>
-              <label class="data-contact__label">
+              <label class="data-contact__label label label--second-color">
                 Телефон:*
                 <input class="data-contact__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
                 <svg class="data-contact__icon" width="20" height="20" focusable="false" aria-hidden="true">
@@ -147,24 +147,24 @@
               Дополнительно
             </legend>
             <div class="additionally__form">
-              <label class="additionally__label">
-                <input class="additionally__input visually-hidden" type="checkbox" name="sweetener">
-                <span class="additionally__pseudo-checkbox"></span>
+              <label class="additionally__label selector label--container label label--main-color">
+                <input class="selector__input visually-hidden" type="checkbox" name="sweetener">
+                <span class="selector__pseudo-checkbox selector__pseudo-checkbox--input"></span>
                 сахарозаменитель
               </label>
-              <label class="additionally__label">
-                <input class="additionally__input visually-hidden" type="checkbox" name="drinking-water">
-                <span class="additionally__pseudo-checkbox"></span>
+              <label class="additionally__label selector label label--main-color">
+                <input class="selector__input visually-hidden" type="checkbox" name="drinking-water">
+                <span class="selector__pseudo-checkbox selector__pseudo-checkbox--input"></span>
                 питьевая вода
               </label>
-              <label class="additionally__label">
-                <input class="additionally__input visually-hidden" type="checkbox" name="milk">
-                <span class="additionally__pseudo-checkbox"></span>
+              <label class="additionally__label selector label label--main-color">
+                <input class="selector__input visually-hidden" type="checkbox" name="milk">
+                <span class="selector__pseudo-checkbox selector__pseudo-checkbox--input"></span>
                 молоко
               </label>
-              <label class="additionally__label">
-                <input class="additionally__input visually-hidden" type="checkbox" name="vitamins">
-                <span class="additionally__pseudo-checkbox"></span>
+              <label class="additionally__label selector label label--main-color">
+                <input class="selector__input visually-hidden" type="checkbox" name="vitamins">
+                <span class="selector__pseudo-checkbox selector__pseudo-checkbox--input"></span>
                 витамины
               </label>
             </div>
@@ -186,7 +186,8 @@
     <section class="main-footer__container">
       <div class="main-footer__wrapper address-wrapper address-wrapper--decorative-color">
         <h2 class="address-wrapper__invite">
-          приглашаем <br class="address-wrapper__transfer">к сотрудничеству <br class="address-wrapper__transfer">дилеров!
+          приглашаем <br class="address-wrapper__transfer">к сотрудничеству <br
+            class="address-wrapper__transfer">дилеров!
         </h2>
         <address class="address-wrapper__address">
           ул. Большая <br class="address-wrapper__break">Конюшенная, д. 19/8 <br class="address-wrapper__break"><br

@@ -31,13 +31,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $second-color;
   margin-bottom: 14px;
 
   &:last-of-type {
@@ -123,8 +116,6 @@
   }
 
   .data-contact__label {
-    font-size: 20px;
-    line-height: 30px;
     margin-bottom: 20px;
 
     &:last-of-type {
