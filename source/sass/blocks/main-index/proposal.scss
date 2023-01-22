@@ -108,6 +108,30 @@
     font-size: 36px;
     line-height: 36px;
     margin: 0 0 34px 0;
+
+    &--skinny {
+      &::before {
+        top: 0;
+        left: 393px;
+        width: 200px;
+        height: 211px;
+        background: url("../img/index/cat-skinny.svg") no-repeat center;
+        background-size: contain;
+        transform: translateY(0) translateX(0);
+      }
+    }
+
+    &--muscular {
+      &::before {
+        top: 0;
+        left: 359px;
+        width: 268px;
+        height: 200px;
+        background: url("../img/index/cat-muscular.svg") no-repeat center;
+        background-size: contain;
+        transform: translateY(0) translateX(0);
+      }
+    }
   }
 
   .proposal__description {
@@ -138,6 +162,30 @@
   .proposal__title {
     margin-bottom: 73px;
     margin-left: 162px;
+
+    &--skinny {
+      &::before {
+        top: 50%;
+        left: -62px;
+        width: 100px;
+        height: 106px;
+        background: url("../img/index/cat-skinny.svg") no-repeat center;
+        background-size: contain;
+        transform: translateY(-50%) translateX(-100%);
+      }
+    }
+
+    &--muscular {
+      &::before {
+        top: 50%;
+        left: -47px;
+        width: 134px;
+        height: 100px;
+        background: url("../img/index/cat-muscular.svg") no-repeat center;
+        background-size: contain;
+        transform: translateY(-50%) translateX(-100%);
+      }
+    }
   }
 
   .proposal__description {
