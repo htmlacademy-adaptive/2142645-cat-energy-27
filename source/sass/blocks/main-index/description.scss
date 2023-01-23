@@ -25,9 +25,10 @@
 
 .description__paragraph {
   position: relative;
-  @include main-paragraph;
   margin: 0;
   margin-left: 80px;
+
+  @include main-paragraph;
 
   &::before {
     content: "";
