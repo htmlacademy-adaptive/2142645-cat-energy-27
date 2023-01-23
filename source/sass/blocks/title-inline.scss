@@ -1,0 +1,32 @@
+.title-inline {
+  &::before {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 1440px;
+    height: 2px;
+    background-color: #68b738;
+  }
+
+  &--middle::before {
+    top: 60%;
+  }
+
+  &--top::before {
+    top: 30%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title-inline {
+    &::before {
+      left: -20000px;
+      width: 100000%;
+    }
+
+    &--top::before {
+      top: 60%;
+    }
+  }
+}

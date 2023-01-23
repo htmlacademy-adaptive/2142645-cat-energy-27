@@ -12,7 +12,7 @@
   position: relative;
   display: inline-block;
   padding-right: 21px;
-  margin: 0 0 36px 0;
+  margin: 0 0 33px 0;
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
@@ -20,17 +20,6 @@
   line-height: 24px;
   color: $main-color;
   background-color: $decorative-color;
-
-  &::before {
-    z-index: -1;
-    position: absolute;
-    top: 60%;
-    left: 0;
-    content: "";
-    width: 1440px;
-    height: 2px;
-    background-color: #68b738;
-  }
 }
 
 .additional-products__list {
@@ -57,11 +46,6 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 36px 0 37px;
-
-    &::before {
-      left: -20000px;
-      width: 100000%;
-    }
   }
 
   .additional-products__item:first-of-type {

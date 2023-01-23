@@ -23,10 +23,16 @@
   @include reset-list;
 }
 
+.description__item {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+}
+
 .description__paragraph {
   position: relative;
   margin: 0;
-  margin-left: 80px;
+  padding-left: 80px;
 
   @include main-paragraph;
 
@@ -34,10 +40,10 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: -20px;
+    left: 2px;
     width: 60px;
     height: 60px;
-    transform: translateY(-50%) translateX(-100%);
+    transform: translateY(-50%);
   }
 
   &--useful::before {
@@ -82,6 +88,7 @@
   }
 
   .description__item {
+    display: block;
     box-sizing: border-box;
     position: relative;
     min-height: 280px;
@@ -101,7 +108,7 @@
   }
 
   .description__paragraph {
-    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
 

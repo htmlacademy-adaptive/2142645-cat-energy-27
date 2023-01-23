@@ -14,17 +14,6 @@
   line-height: 26px;
   color: $main-color;
   background-color: $decorative-color;
-
-  &::before {
-    z-index: -1;
-    position: absolute;
-    top: 30%;
-    left: 0;
-    content: "";
-    width: 1440px;
-    height: 2px;
-    background-color: #68b738;
-  }
 }
 
 .data-contact__label {
@@ -110,12 +99,6 @@
     margin-bottom: 76px;
     padding: 0 42px 0 39px;
     margin-left: -39px;
-
-    &::before {
-      top: 60%;
-      left: -20000px;
-      width: 100000%;
-    }
   }
 
   .data-contact__title br {
@@ -167,6 +150,7 @@
 
   .data-contact__wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 78px;
     width: 100%;
   }

@@ -13,17 +13,6 @@
   line-height: 26px;
   color: $main-color;
   background-color: $decorative-color;
-
-  &::before {
-    z-index: -1;
-    position: absolute;
-    top: 60%;
-    left: 0;
-    content: "";
-    width: 1440px;
-    height: 2px;
-    background-color: #68b738;
-  }
 }
 
 .comment__input {
@@ -59,11 +48,6 @@
     margin-bottom: 76px;
     padding: 0 42px 0 39px;
     margin-left: -39px;
-
-    &::before {
-      left: -20000px;
-      width: 100000%;
-    }
   }
 
   .comment__input {

@@ -14,7 +14,7 @@
 
 .header-top__link-logo-cat {
   text-decoration: none;
-
+  align-self: flex-start;
   &:hover {
     opacity: 0.8;
   }
@@ -47,8 +47,8 @@
   box-sizing: content-box;
   width: 24px;
   height: 20px;
-  padding: 4px;
-  margin: -4px;
+  padding: 7px 6px 4px 4px;
+  margin: -7px -6px -4px -4px;
   border: 0;
   cursor: pointer;
 

@@ -13,7 +13,7 @@ import squoosh from 'gulp-libsquoosh';
 import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore'
 
-const styles = () => {
+const styles = (done) => {
   return gulp.src('source/sass/style.scss', {sourcemaps: true})
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
@@ -23,66 +23,74 @@ const styles = () => {
     ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', {sourcemaps: '.'}))
-    .pipe(browser.stream());
+    .pipe(browser.stream())
+    done();
 }
 
-const html = () => {
+const html = (done) => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({
       collapseWhitespace: true
     }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('build'))
+    done();
 }
 
-const scripts = () => {
+const scripts = (done) => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(rename(function (path) {
       path.extname = '.min.js'
     }))
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest('build/js'))
+    .pipe(browser.stream())
+    done();
 }
 
-const optimizeImages = () => {
+const optimizeImages = (done) => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh())
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img'))
+    done();
 }
 
-const copyImages = () => {
+const copyImages = (done) => {
   return gulp.src('source/img/**/*.{jpg,png}')
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img'))
+    done();
 }
 
-const createWebP = () => {
+const createWebP = (done) => {
   return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*'])
     .pipe(squoosh({
       webp: {}
     }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img'))
+    done();
 }
 
-const optimizeSVG = () => {
+const optimizeSVG = (done) => {
   return gulp.src(['source/img/**/*.svg', '!source/img/sprite/*'])
     .pipe(svgmin())
-    .pipe(gulp.dest('build/img/'));
+    .pipe(gulp.dest('build/img/'))
+    done();
 }
 
-const sprite = () => {
+const sprite = (done) => {
   return gulp.src('source/img/sprite/*.svg')
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img'))
+    done();
 }
 
 const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
-    'source/manifest.webmanifest'
   ], {
     base: 'source'
   })
