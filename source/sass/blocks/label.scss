@@ -1,0 +1,28 @@
+.label {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &--second-color {
+    color: $second-color;
+  }
+
+  &--rare-color {
+    color: #222222;
+  }
+
+  &--main-color {
+    color: $main-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
