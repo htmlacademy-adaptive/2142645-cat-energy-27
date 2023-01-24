@@ -31,7 +31,7 @@
       content: "";
       width: 50px;
       height: 53px;
-      background: url("../img/index/cat-skinny.svg") no-repeat center;
+      background: url("../img/index/cat-skinny.svg") no-repeat center / contain;
       transform: translateY(-50%) translateX(-100%);
     }
   }
@@ -40,11 +40,12 @@
     &::before {
       position: absolute;
       top: 50%;
-      left: -19px;
+      left: -11px;
       content: "";
       width: 67px;
       height: 50px;
-      background: url("../img/index/cat-muscular.svg") no-repeat center;
+      background: url("../img/index/cat-muscular.svg") no-repeat center /
+        contain;
       transform: translateY(-50%) translateX(-100%);
     }
   }
@@ -115,8 +116,6 @@
         left: 393px;
         width: 200px;
         height: 211px;
-        background: url("../img/index/cat-skinny.svg") no-repeat center;
-        background-size: contain;
         transform: translateY(0) translateX(0);
       }
     }
@@ -127,8 +126,6 @@
         left: 359px;
         width: 268px;
         height: 200px;
-        background: url("../img/index/cat-muscular.svg") no-repeat center;
-        background-size: contain;
         transform: translateY(0) translateX(0);
       }
     }
@@ -169,8 +166,6 @@
         left: -62px;
         width: 100px;
         height: 106px;
-        background: url("../img/index/cat-skinny.svg") no-repeat center;
-        background-size: contain;
         transform: translateY(-50%) translateX(-100%);
       }
     }
@@ -181,8 +176,6 @@
         left: -47px;
         width: 134px;
         height: 100px;
-        background: url("../img/index/cat-muscular.svg") no-repeat center;
-        background-size: contain;
         transform: translateY(-50%) translateX(-100%);
       }
     }

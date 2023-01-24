@@ -7,6 +7,7 @@
 .show-all__title {
   position: relative;
   margin: 0 0 8px 0;
+  padding-right: 3px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
@@ -44,6 +45,7 @@
 
 .show-all__explanation {
   margin: 0 0 21px 0;
+  padding-right: 2px;
   font-family: $second-font;
   font-style: normal;
   font-weight: 400;
@@ -62,6 +64,7 @@
   }
 
   .show-all__title {
+    padding: 0;
     text-align: center;
     font-size: 20px;
     line-height: 22px;
@@ -85,6 +88,7 @@
   }
 
   .show-all__explanation {
+    padding: 0;
     text-align: center;
     font-size: 16px;
     line-height: 18px;

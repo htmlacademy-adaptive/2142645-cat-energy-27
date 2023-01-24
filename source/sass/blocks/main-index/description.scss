@@ -23,10 +23,48 @@
   @include reset-list;
 }
 
+.description__item {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+}
+
 .description__paragraph {
-  @include main-paragraph;
+  position: relative;
   margin: 0;
-  margin-left: 80px;
+  padding-left: 80px;
+
+  @include main-paragraph;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    width: 60px;
+    height: 60px;
+    transform: translateY(-50%);
+  }
+
+  &--useful::before {
+    background: url("../img/index/description/useful.svg") no-repeat center;
+    background-size: contain;
+  }
+
+  &--powder::before {
+    background: url("../img/index/description/powder.svg") no-repeat center;
+    background-size: contain;
+  }
+
+  &--dosage::before {
+    background: url("../img/index/description/dosage.svg") no-repeat center;
+    background-size: contain;
+  }
+
+  &--month::before {
+    background: url("../img/index/description/month.svg") no-repeat center;
+    background-size: contain;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -50,6 +88,7 @@
   }
 
   .description__item {
+    display: block;
     box-sizing: border-box;
     position: relative;
     min-height: 280px;
@@ -69,9 +108,19 @@
   }
 
   .description__paragraph {
-    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -31px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      transform: translateY(-100%) translateX(0);
+    }
   }
 }
 

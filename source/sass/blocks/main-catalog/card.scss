@@ -19,14 +19,19 @@
   color: $second-color;
 }
 
+.card__price {
+  white-space: nowrap;
+}
+
 .card__quantity-list {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: 0 0 15px 0;
 }
 
 .card__button-buy {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
