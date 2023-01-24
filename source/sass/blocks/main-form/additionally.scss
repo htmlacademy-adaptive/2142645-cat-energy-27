@@ -36,6 +36,7 @@
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
     row-gap: 32px;
+    column-gap: 60px;
     justify-items: start;
   }
 }
@@ -47,10 +48,9 @@
   }
 
   .additionally__form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 1125px;
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr 1fr;
+    column-gap: 105px;
+    row-gap: 35px;
   }
 }

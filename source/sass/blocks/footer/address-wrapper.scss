@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   gap: 15px;
   justify-content: space-between;
+  padding: 26px 20px;
   background: #f2f2f2;
 }
 
@@ -18,6 +19,7 @@
 }
 
 .address-wrapper__address {
+  padding-right: 2px;
   font-family: $second-font;
   font-style: normal;
   font-weight: 400;
@@ -32,6 +34,8 @@
 
 @media (min-width: $tablet-width) {
   .address-wrapper {
+    padding: 60px 70px 56px 70px;
+
     &--decorative-color {
       background-color: $decorative-color;
     }
@@ -43,8 +47,11 @@
   }
 
   .address-wrapper__address {
+    padding: 0;
+    text-align: end;
     font-size: 16px;
     line-height: 20px;
+    transform: translateY(-5px);
   }
 
   .address-wrapper__break:nth-of-type(2) {
@@ -55,7 +62,14 @@
 @media (min-width: $desktop-width) {
   .address-wrapper {
     background-color: $decorative-color;
-    gap: 87px;
+    gap: 96px;
     justify-content: flex-start;
+    padding: 60px 80px 60px 80px;
+    min-height: 198px;
+    min-width: 565px;
+  }
+
+  .address-wrapper__address {
+    text-align: start;
   }
 }

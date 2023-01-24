@@ -75,23 +75,28 @@
     min-width: auto;
   }
 
+  .catalog__item {
+    padding-top: 0;
+  }
+
   .catalog__show-all {
     min-width: auto;
     padding: 160px 38px 38px 38px;
   }
 
   .catalog__title-wrapper {
-    padding: 52px 110px 38px 110px;
+    padding: 74px 110px 38px 110px;
   }
 
   .catalog__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 80px;
+    column-gap: 80px;
+    row-gap: 144px;
   }
 
   .catalog__container {
     box-sizing: border-box;
-    padding: 41px 110px 76px 110px;
+    padding: 127px 110px 76px 110px;
     max-width: 1440px;
     margin: 0 auto;
   }

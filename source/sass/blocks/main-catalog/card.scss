@@ -38,7 +38,7 @@
   .card {
     display: grid;
     grid-template: auto / 1fr 1fr;
-    padding: 26px 38px 28px 38px;
+    padding: 26px 38px 29px 38px;
   }
 
   .card__title {
@@ -50,9 +50,10 @@
 
   .card__quantity-list {
     display: grid;
-    grid-template: auto / auto 90px;
+    grid-template: auto / auto 92px;
     justify-self: end;
     margin: 0;
+    padding-top: 1px;
   }
 
   .card__quantity,
@@ -68,7 +69,7 @@
 
   .card__button-buy {
     grid-column: 1/-1;
-    margin: 23px 0 0 0;
+    margin: 22px 0 0 0;
   }
 }
 
@@ -81,12 +82,16 @@
 
   .card__quantity-list {
     margin-left: auto;
-    grid-template: auto / 195px 90px;
+    grid-template: auto/243px 41px;
   }
 
   .card__button-buy {
-    margin: 0 0 0 40px;
+    margin: 0 0 0 43px;
     min-width: 244px;
     width: auto;
+  }
+
+  .card__price {
+    justify-self: start;
   }
 }

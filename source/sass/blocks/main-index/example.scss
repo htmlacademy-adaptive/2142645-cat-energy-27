@@ -166,6 +166,7 @@
 
   .example__cost {
     flex-direction: column;
+    align-items: flex-end;
     gap: 9px;
     margin-top: 12px;
     margin-left: 127px;
@@ -228,12 +229,12 @@
 
   .example__description {
     margin-bottom: 69px;
-    width: 436px;
+    width: 433px;
   }
 
   .example__cost {
     flex-direction: row;
-    gap: 63px;
+    gap: 66px;
     justify-self: start;
     margin: 0;
   }

@@ -4,8 +4,7 @@
 
 .main-footer__wrapper {
   box-sizing: border-box;
-  padding: 26px 20px;
-  min-width: 320px;
+
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -53,10 +52,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-footer__wrapper {
-    padding: 60px 70px 56px 70px;
-  }
-
   .main-footer__links-container {
     display: flex;
     align-items: center;
@@ -67,9 +62,14 @@
     height: 400px;
   }
 
+  .main-footer__icon {
+    width: 143px;
+    height: 26px;
+  }
+
   .main-footer__social {
     align-items: center;
-    padding: 0 0 0 13px;
+    padding: 0 0 0 25px;
     margin: 0 auto 0;
     border: 0;
   }
@@ -85,11 +85,10 @@
     position: absolute;
     top: 95px;
     left: 110px;
-    padding: 56px 80px 56px 80px;
   }
 
   .main-footer__links-container {
-    padding: 57px 110px 58px 110px;
+    padding: 68px 110px 58px 110px;
   }
 
   .main-footer__social {

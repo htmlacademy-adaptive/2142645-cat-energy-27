@@ -53,7 +53,7 @@
 }
 
 .program-selection__cat-data-container {
-  padding: 0 6.25% 24px 6.25%;
+  padding: 0 20px 24px 20px;
   width: 100%;
   border-bottom: 1px solid #d9d9d9;
 
@@ -61,7 +61,7 @@
 }
 
 .program-selection__result-container {
-  padding: 22px 6.25% 19px 6.25%;
+  padding: 22px 20px 19px 20px;
   width: 100%;
   border-bottom: 1px solid #d9d9d9;
 
@@ -69,21 +69,21 @@
 }
 
 .program-selection__data-contact-container {
-  padding: 26px 6.25% 23px 6.25%;
+  padding: 26px 20px 23px 20px;
   width: 100%;
 
   @include container;
 }
 
 .program-selection__comment-container {
-  padding: 0 6.25% 23px 6.25%;
+  padding: 0 20px 6px 20px;
   width: 100%;
 
   @include container;
 }
 
 .program-selection__additionally-container {
-  padding: 0 6.25% 34px 6.25%;
+  padding: 0 20px 34px 20px;
   width: 100%;
 
   @include container;
@@ -101,11 +101,11 @@
   }
 
   .program-selection__data-contact-container {
-    padding: 71px 70px 65px 71px;
+    padding: 74px 68px 65px 71px;
   }
 
   .program-selection__comment-container {
-    padding: 0 70px 65px 70px;
+    padding: 0 70px 69px 70px;
   }
 
   .program-selection__additionally-container {
@@ -119,6 +119,7 @@
   .program-selection__title {
     font-size: 60px;
     line-height: 60px;
+    margin: 0 0 53px;
   }
 
   .program-selection__description {
@@ -142,9 +143,17 @@
     font-size: 16px;
     margin: 0;
   }
+
+  .program-selection__signature-wrapper {
+    margin-bottom: 4px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .program-selection__title {
+    margin: 0 0 56px;
+  }
+
   .program-selection__wrapper {
     padding: 0 110px 66px 110px;
   }
@@ -171,7 +180,7 @@
   }
 
   .program-selection__comment-container {
-    padding: 0 110px 67px 110px;
+    padding: 0 110px 71px 110px;
   }
 
   .program-selection__additionally-container {
@@ -189,5 +198,9 @@
 
   .program-selection__additionally {
     display: flex;
+  }
+
+  .program-selection__signature-wrapper {
+    margin-bottom: 0;
   }
 }

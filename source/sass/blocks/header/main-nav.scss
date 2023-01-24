@@ -69,6 +69,10 @@
     &:first-of-type {
       border: 0;
     }
+
+    &:nth-of-type(2) {
+      padding-right: 3px;
+    }
   }
 
   .main-nav__link {
@@ -104,18 +108,19 @@
     font-size: 20px;
     line-height: 30px;
 
+    &--current {
+      &::after {
+        bottom: -8px;
+
+      }
+    }
+
     &--decorative-color {
       color: $decorative-color;
 
       &::after {
         background: $decorative-color;
       }
-    }
-  }
-
-  .main-nav__item {
-    &:nth-of-type(2) {
-      transform: translateX(2px);
     }
   }
 }

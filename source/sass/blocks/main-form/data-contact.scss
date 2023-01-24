@@ -34,7 +34,8 @@
   height: 45px;
   margin-left: 10px;
   padding: 14px 40px 14px 15px;
-  border: 1px solid #e7e7e7;
+  outline: 1px solid #e7e7e7;
+  outline-offset: -1px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
@@ -42,6 +43,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $second-color;
+  border: 0;
 
   &::placeholder {
     color: $second-color;
@@ -49,15 +51,13 @@
   }
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    outline: 1px solid #cdcdcd;
+    outline-offset: -1px;
   }
 
   &:focus {
-    border: 2px solid $second-color;
-  }
-
-  &:focus-visible {
-    outline: 0;
+    outline: 2px solid $second-color;
+    outline-offset: -2px;
   }
 }
 
@@ -82,7 +82,8 @@
 }
 
 .data-contact__label--input-error .data-contact__input {
-  border: 2px solid #ff8282;
+  outline: 2px solid #ff8282;
+  outline-offset: -2px;
 }
 
 @media (min-width: $tablet-width) {
@@ -91,7 +92,7 @@
     line-height: 36px;
     margin-bottom: 76px;
     padding: 0 42px 0 39px;
-    margin-left: -39px;
+    margin-left: -41px;
   }
 
   .data-contact__title br {
@@ -132,6 +133,7 @@
   .data-contact__title {
     padding: 0 40px;
     margin-left: -40px;
+    margin-bottom: 76px;
   }
 
   .data-contact__label {
@@ -140,9 +142,10 @@
   }
 
   .data-contact__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 78px;
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    column-gap: 75px;
+    row-gap: 35px;
     width: 100%;
   }
 }
