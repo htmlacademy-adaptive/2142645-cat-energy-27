@@ -11,16 +11,24 @@
 
 .main-footer__container {
   position: relative;
-  max-width: 1440px;
   margin: 0 auto;
+}
+
+.main-footer__internal-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  pointer-events: none;
+
+  @include container;
 }
 
 .main-footer__maps {
   display: block;
   border: none;
   width: 100%;
-
-  @include container;
 }
 
 .main-footer__links-container {

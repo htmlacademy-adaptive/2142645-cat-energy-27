@@ -1,4 +1,4 @@
-<svg id="mail" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
     <path d="M1.5 8.5v8h17v-8m-17-5h17v2l-8.5 6-8.5-6v-2Z" stroke-linecap="round"
       stroke-linejoin="round" />
 </svg>
