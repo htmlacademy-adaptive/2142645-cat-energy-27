@@ -7,6 +7,10 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+
 </head>
 
 <body class="page__body">
@@ -183,6 +187,11 @@
           </div>
           <div class="example__photo-wrapper">
             <picture>
+              <source type="image/webp"
+                srcset="./img/index/example-cat/example-cat-before.webp 1x, ./img/index/example-cat/example-cat-before@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/index/example-cat/example-cat-before-tablet.webp 1x, ./img/index/example-cat/example-cat-before-tablet@2x.webp 2x"
+                media="(min-width: 768px)">
               <source
                 srcset="./img/index/example-cat/example-cat-before-tablet.png 1x, ./img/index/example-cat/example-cat-before-tablet@2x.png 2x"
                 media="(min-width: 768px)">
@@ -191,6 +200,11 @@
                 alt="Сравнение до и после похудения кота.">
             </picture>
             <picture>
+              <source type="image/webp"
+                srcset="./img/index/example-cat/example-cat-after.webp 1x, ./img/index/example-cat/example-cat-after@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./img/index/example-cat/example-cat-after-tablet.webp 1x, ./img/index/example-cat/example-cat-after-tablet@2x.webp 2x"
+                media="(min-width: 768px)">
               <source
                 srcset="./img/index/example-cat/example-cat-after-tablet.png 1x, ./img/index/example-cat/example-cat-after-tablet@2x.png 2x"
                 media="(min-width: 768px)">
