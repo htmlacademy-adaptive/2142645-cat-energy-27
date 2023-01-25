@@ -111,7 +111,7 @@
   .header-top__main-nav {
     position: static;
     display: block;
-    margin-top: 18px;
+    margin-top: 8px;
   }
 
   .header-top__logo-text {
@@ -127,5 +127,9 @@
   .header-top__logo-cat {
     width: 202px;
     height: 60px;
+  }
+
+  .header-top__main-nav {
+    margin-top: 2px;
   }
 }

@@ -7,7 +7,6 @@
 
   &:hover .selector__pseudo-checkbox::before {
     outline: 1px solid #bababa;
-    outline-offset: -1px;
   }
 
   &:focus-within {
@@ -31,7 +30,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    border: 1px solid #cdcdcd;
+    outline: 1px solid #cdcdcd;
   }
 
   &::after {
@@ -67,6 +66,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .selector {
+    gap: 20px;
+  }
+
   .selector__pseudo-checkbox {
     &::before {
       width: 40px;

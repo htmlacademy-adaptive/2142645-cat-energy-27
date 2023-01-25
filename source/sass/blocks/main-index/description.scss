@@ -44,26 +44,31 @@
     width: 60px;
     height: 60px;
     transform: translateY(-50%);
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--useful::before {
-    background: url("../img/index/description/useful.svg") no-repeat center;
-    background-size: contain;
+    background-image: url("../img/index/description/useful.svg");
   }
 
   &--powder::before {
-    background: url("../img/index/description/powder.svg") no-repeat center;
-    background-size: contain;
+    background-image: url("../img/index/description/powder.svg");
   }
 
   &--dosage::before {
-    background: url("../img/index/description/dosage.svg") no-repeat center;
-    background-size: contain;
+    background-image: url("../img/index/description/dosage.svg");
   }
 
   &--month::before {
-    background: url("../img/index/description/month.svg") no-repeat center;
-    background-size: contain;
+    background-image: url("../img/index/description/month.svg");
+  }
+}
+
+.description__break {
+  &--2 {
+    display: none;
   }
 }
 
@@ -122,6 +127,12 @@
       transform: translateY(-100%) translateX(0);
     }
   }
+
+  .description__break {
+    &--2 {
+      display: inline;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -131,7 +142,7 @@
 
   .description__list {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 70px;
+    column-gap: 76px;
   }
 
   .description__paragraph {
