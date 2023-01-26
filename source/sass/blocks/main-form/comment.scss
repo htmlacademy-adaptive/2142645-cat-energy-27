@@ -31,12 +31,7 @@
   color: $second-color;
 
   &::placeholder {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
     color: $second-color;
   }
 }
@@ -52,10 +47,10 @@
 
   .comment__input {
     padding: 10px 19px;
-
+    font-size: 20px;
+    line-height: 30px;
     &::placeholder {
       font-size: 20px;
-      line-height: 30px;
     }
   }
 }
